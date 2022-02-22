@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-class Measure
+class Measure                     //creating Measure class
 	{
-	     public:
+	     public:                                     //declaring 3 public float type variables
 		float height,length,width;
 
-	     void setInput(float a,float b,float c)
+	     void setInput(float a,float b,float c)      //defining 3 public functions
 			{
 				height=a;
 				length=b;
@@ -20,13 +20,14 @@ class Measure
 				return length*width*height;
 			}
 
-	};
-int main()
+	};                // measure class ends here
+
+int main() 				//main method starts here
 	{
-		Measure obj1;
+		Measure obj1;		//creating 2 objects of Measure class
 		Measure obj2;
 
-		obj1.setInput(10,20,30);
+		obj1.setInput(10,20,30);	//invoking methods
 		obj2.setInput(40,50,60);
 
 		cout << "Input for object 1 " << "height=" << obj1.height << "width=" << obj1.width << "length=" << obj1.length << endl;
