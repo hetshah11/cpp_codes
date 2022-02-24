@@ -1,4 +1,4 @@
-//Demo code of == operator overloading.
+//This is C++ code for demonstrating == operator overloading.
 //Edited By: Het Shah
 
 #include <iostream>
@@ -43,7 +43,7 @@ class Complex
 }; //end of Complex class
 
 int main()
-{
+{		//main method starts here
     Complex c1(2,3), c2(2,3);
 
     if(c1 == c2)
@@ -54,5 +54,5 @@ int main()
     {
         cout << "Object are not equal"<< endl;
     }
-
+		
 }
