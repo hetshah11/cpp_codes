@@ -28,7 +28,7 @@ class FuelCar : virtual public car	//FuelCar class inherited from car class
 				cout << "fuel car runs with fuel" << endl;
 			}
 	};	//FuelCar class ends here
-class ElectricCar :  public car	// ElectricCar class inherited from car class
+class ElectricCar :  virtual public car	// ElectricCar class inherited from car class
 	{
 		public:
 		void fun3()

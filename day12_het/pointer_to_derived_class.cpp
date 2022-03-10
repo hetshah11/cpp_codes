@@ -39,12 +39,17 @@ int main()
 		base *ptr,ob1;
 		derived ob2;
 
-		ptr=&ob2;
+		ptr=&ob1;
 
 		ptr->setDataForBase(5);
-		cout << "ans1=" <<ptr->getDataForDerived()<<endl;
+		cout << "ans1=" <<ptr->getDataForBase()<<endl;
+
+		ptr=&ob2;
 		
 		ptr->setDataForDerived(10);		
-		cout << "ans2=" <<ptr->getDataForDerived()<<endl;
+		cout << "ans2=" << ptr->getDataForDerived()<<endl;
+
+
+		return 0;
 			
 		}
