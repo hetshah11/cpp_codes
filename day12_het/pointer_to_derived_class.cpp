@@ -37,17 +37,22 @@ class derived : public base
 int main()
 	{
 		base *ptr,ob1;
-		derived ob2;
+		derived ob2,*ptr2;
 
 		ptr=&ob1;
 
 		ptr->setDataForBase(5);
 		cout << "ans1=" <<ptr->getDataForBase()<<endl;
 
-		ptr=&ob2;
+		((derived*)ptr)->setDataForBase(5);
+		cout << "ans1=" <<(derived*)ptr)->getDataForBase()<<endl;
 		
-		ptr->setDataForDerived(10);		
-		cout << "ans2=" << ptr->getDataForDerived()<<endl;
+		
+		//ptr->setDataForDerived(10);				//Error		
+		//cout << "ans2=" << ptr->getDataForDerived()<<endl;	//Error
+
+		//ptr2=&ob1;		//Error
+		
 
 
 		return 0;
