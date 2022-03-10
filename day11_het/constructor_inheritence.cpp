@@ -15,6 +15,10 @@ class ABC		//defining class ABC
 			{
 				cout << "Inside ABC's constructor" << endl;
 			}
+		ABC(int x)
+			{
+				cout << "Inside ABC's parameterized constructor" << endl;
+			}
 		~ABC()		//destructor
 			{
 				cout << "Inside ABC's destructor" << endl;
@@ -28,7 +32,7 @@ class XYZ : public ABC		//class XYZ inherited from class ABC
 			{
 				cout << "Inside XYZ's constructor" << endl;
 			}
-		XYZ(int k)		//class XYZ parameterized constructor
+		XYZ(int k) : ABC(k)		//class XYZ parameterized constructor
 			{
 				k=x;
 				cout << "Inside XYZ's parameterized constructor" << endl;
@@ -41,7 +45,7 @@ class XYZ : public ABC		//class XYZ inherited from class ABC
 
 int main()
 	{
-		XYZ obj1;	//crearing object of class XYZ
+		//XYZ obj1;	//crearing object of class XYZ
 		XYZ obj2(5);	//crearing object of class XYZ
 
 		return 0;
