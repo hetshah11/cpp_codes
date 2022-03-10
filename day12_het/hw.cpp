@@ -1,3 +1,9 @@
+// Create a class student having private members marks, name and public
+// members rollno, getdata(), printdata(). Demonstrate concept of pointer to
+// class members for array of 3 objects.
+
+
+
 #include<iostream>
 #include<string.h>
 using namespace std;
