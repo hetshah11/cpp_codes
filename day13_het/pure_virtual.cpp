@@ -12,6 +12,11 @@ class shape
 				}
 			virtual float calculateArea()
 				{
+				} 
+		private:
+			void fun()
+				{
+					cout << "Hello" << endl;
 				}
 	};
 
@@ -34,11 +39,20 @@ class circle : public shape
 	};
 int main()
 	{
+		shape *ptr;
 		square s;
 		circle c;
+		ptr=&s;
 		cout << "Enter lenghth to calculate the area of a square:" << endl;
-		s.getdata();
-		cout << "Enter radius to calculate the area of a circle: ";
-		c.getdata();
-		cout << "Area of circle: " << c.calculateArea();
+		ptr->getdata();
+
+		//ptr->fun();
+		cout << "Area of square: " <<ptr->calculateArea() << endl;
+		ptr=&c;
+		cout << "Enter radius to calculate the area of a circle: " << endl;
+		ptr->getdata();
+
+		
+		cout << "Area of circle: " << ptr->calculateArea() << endl;
+		
 	}

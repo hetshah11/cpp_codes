@@ -31,10 +31,18 @@ class Derv2 : public Base
 
 int main()
 	{
-		Derv dv1;
-		Derv dv2;
+		Base b1;
+		Derv1 dv1;
+		Derv2 dv2;
 
 		Base *ptr;
+
+		ptr=&b1;
+		ptr->show();
+
 		ptr=&dv1;
+		ptr->show();
+
+		ptr=&dv2;
 		ptr->show();
 	}
