@@ -30,23 +30,23 @@ class XYZ : public ABC		//class XYZ created(child class of ABC)
 
 int main()
 	{
-		ABC obj1;
-		XYZ obj2;
+		ABC obj1;		//object of class ABC
+		XYZ obj2;		//object of class XYZ
 
-		ABC *bptr;
-		bptr=&obj1;
+		ABC *bptr;		//pointer of class ABC
+		bptr=&obj1;		//base class pointer pointing to object of base class
 
 		cout << endl <<" Base class pointer assign address of base class object" << endl;
 
-		bptr->b=100;
-		bptr->display();
+		bptr->b=100;	
+		bptr->display();	//display() from base class
 
-		bptr=&obj2;
+		bptr=&obj2;		//base class pointer pointing to object of derived class
 
 		bptr->b=200;
 		cout << "Base class pointer assign address of derived class" << endl;
 
-		bptr->display();
+		bptr->display();		//
 
 		derived *dptr;
 		dptr=&obj2;		
