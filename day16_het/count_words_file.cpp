@@ -20,8 +20,6 @@ int main()
 				while(!input.eof())
 					{
 						input >> str;
-						//input >> str >> str2;
-						//cout << str << '\t' << str2 << endl;
 						count++;
 					}
 			}

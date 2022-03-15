@@ -4,21 +4,24 @@ using namespace std;
 
 int main()
 	{
-		fstream input;
-		string str,str2;
-
+		ifstream input;
+		string str;
 		input.open("data.txt");
-
+		int count=0;
+		
 		if(!input)
 			cout << "file did not open" << endl;
 
+		
 		else
 			{
-				while(!input.eof())
+				while(getline(input,str))
 					{
-						input >> str >> str2;
-						cout << str << '\t' << str2 << endl;
+						cout << str << endl;
+						count++;
 					}
+				cout << "Number of lines: " <<count << endl;
 			}
-		input.close();
 	}
+
+

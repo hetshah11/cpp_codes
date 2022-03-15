@@ -18,7 +18,7 @@ while(!fin.eof())
 		//fout.put(ch);
 		
 		fin << str;
-		fout >> str 
+		fout >> str; 
 	}
 
 cout << "Copy done!" << endl;
