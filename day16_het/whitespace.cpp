@@ -20,7 +20,7 @@ int main()
 				while(!input.eof())
 					{
 						input.get(ch);
-						if(ch==32)
+						if(ch==' ')
 						count++;
 					}
 			}
