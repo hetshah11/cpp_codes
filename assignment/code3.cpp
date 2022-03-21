@@ -10,16 +10,34 @@ int main()
         fstream file;       //file handler
         string str;
         //char a[15];
-        int count=0,i;
+        int count=0,i,flag=1;
 
-        file.open("a.txt");     //openung file
+        try
+        {
+            file.open("a.txt"); //file opening
+            if(file.fail())
+                throw 'a';
 
-        while(!file.eof())
+            
+        }
+        catch(char ch)
+        {
+            flag=1;
+            cout << "Something went wrong" << endl;
+        }
+
+        if(flag==1)
             {
-                file >> str;        //storing file data into string
-                if(str[0]=='e')
-                    count++;
-                  
+                while(!file.eof())
+                {
+                    file >> str;        //storing file data into string
+                    if(str[0]=='e')
+                        count++;
+                    
+                }
+                cout << "words starting eith e= "<< count << endl;
+
             }
-        cout << "words starting eith e= "<< count << endl;
+
+        
     }

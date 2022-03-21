@@ -11,15 +11,32 @@ int main()
     {
        fstream file;        //file handler
        string str;
-       int count=0;
+       int count=0,flag=1;
+        
+        try
+        {
+            file.open("a.txt"); //file opening
+            if(file.fail())
+                throw 'a';
 
-        file.open("a.txt");     //file opening
-        while(!file.eof())
+            
+        }
+        catch(char ch)
+        {
+            flag=0;
+            cout << "Something went wrong" << endl;
+        }
+        if(flag==1)
             {
-                file >> str;    //storing file data into string
-                if(str=="the")
-                    count++;
-            } 
-        cout << "No of the =" << count << endl;
+                     while(!file.eof())
+                        {
+                            file >> str;    //storing file data into string
+                            if(str=="the")
+                            count++;
+                        } 
+                cout << "No of the =" << count << endl;
+
+            }    
+       
         return 0; 
     }

@@ -10,26 +10,44 @@ int main()
         fstream file;       //file handeler
         
         char str[15];
-        int count=0,i;
+        int count=0,i,flag=1;
 
-        file.open("a.txt");     //file opening
+        try
+        {
+            file.open("a.txt"); //file opening
+            if(file.fail())
+                throw 'a';
 
-        while(!file.eof())
+            
+        }
+        catch(char ch)
+        {
+            flag=0;
+            cout << "Something went wrong" << endl;
+        }
+
+        if(flag==1)
             {
-                file >> str;    //storing file data into string
-                for(i=0;i<=strlen(str);i++)
-                    {
-                        
-                            if(str[i]=='a')
-                            {
-                                count++;
-                                break;
-                            }
 
-                        
+                while(!file.eof())
+                    {
+                        file >> str;    //storing file data into string
+                        for(i=0;i<=strlen(str);i++)
+                            {
+                                
+                                    if(str[i]=='a')
+                                    {
+                                        count++;
+                                        break;
+                                    }
+
+                                
+                                
+                            }
                         
                     }
-                  
+                cout << "words with having a= "<< count << endl;
+
             }
-        cout << "words with having a= "<< count << endl;
+        
     }
