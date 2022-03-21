@@ -16,6 +16,7 @@ T sum(T n1, T n2)
 
             C=sum(A,B);
             c=sum(a,b);
+            //c=sum(A,b);
 
             cout << "The sum of int: " << c << endl;
             cout << "The sum of long: " << C << endl;

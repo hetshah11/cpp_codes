@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-template<class T,class U>
-void multiply(T num1,U num2)
+template<class T>
+void multiply(T num1,T num2)
     {
         cout << "Result: " << num1*num2 << endl;
     }
@@ -14,6 +14,7 @@ int main()
 
         multiply(a,b);
         multiply(x,y);
+        multiply(a,x);
 
         return 0;
     }
