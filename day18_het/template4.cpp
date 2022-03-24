@@ -15,8 +15,8 @@ class Addition
 
     int main()
         {
-            Addition ob1;
-            Addition ob2;
+            Addition<int> ob1;
+            Addition<long> ob2;
 
             int a=10,b=20,c;
             long A=11,B=22,C;

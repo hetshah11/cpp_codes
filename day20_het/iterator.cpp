@@ -32,7 +32,11 @@ int main()
                 cout << *p << " ";
                 p++;
             }
-        p=v.begin()+1;
+        p=v.begin();
+        p++;
+        v.erase(p);
+
+        p=v.begin();
         
 
         while(p!=v.end())
@@ -40,7 +44,21 @@ int main()
                 *p=toupper(*p);
                 p++;
             }
-        cout << "Modified contents:\n";
+        cout << "\nModified contents:\n";
+
+        p=v.begin();
+
+        while(p!=v.end())
+            {
+                cout << *p << " ";
+                p++;
+            }
+
+        v.clear();
+
+        cout << "\nModified contents:\n";
+
+        
 
         p=v.begin();
 
