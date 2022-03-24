@@ -43,7 +43,7 @@ class phoneNo
 
 int main()
     {
-        map<name,phoneNo>directory;
+        map<name,phoneNo> directory;
 
         directory.insert(pair<name,phoneNo>(name("Emp1"),phoneNo("555-1111")));
         directory.insert(pair<name,phoneNo>(name("Emp2"),phoneNo("555-2222")));

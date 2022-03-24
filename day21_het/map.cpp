@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
     {
-        map<char,int>m;
+        map <char,int> m;
         int i;
 
         for(i=0;i<26;i++)

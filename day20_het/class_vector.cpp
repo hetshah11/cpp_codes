@@ -26,14 +26,14 @@ class DailyTemp
             }
     };
 
-bool operator<(DailyTemp a,DailyTemp b)
-    {
-        return a.get_temp() < b.get_temp();
-    }
-bool operator==(DailyTemp a,DailyTemp b)
-    {
-        return a.get_temp() == b.get_temp();
-    }
+// bool operator<(DailyTemp a,DailyTemp b)
+//     {
+//         return a.get_temp() < b.get_temp();
+//     }
+// bool operator==(DailyTemp a,DailyTemp b)
+//     {
+//         return a.get_temp() == b.get_temp();
+//     }
 
 int main()
     {
