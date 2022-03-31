@@ -1,3 +1,6 @@
+//list in stl
+//Edited by : Het Shah
+
 #include<iostream>
 #include<list>
 using namespace std;

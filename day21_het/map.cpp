@@ -1,3 +1,6 @@
+//map in stl
+//Edited By; Het shah
+
 #include<iostream>
 #include<map>
 using namespace std;
@@ -9,7 +12,7 @@ int main()
 
         for(i=0;i<26;i++)
             {
-                m.insert(pair<char,int>('A'+i,65+i));
+                m.insert(pair<char,int>('A'+i,65+i));   //inserting data into map
             }
         char ch;
         cout << "Enter key(an upper case):";

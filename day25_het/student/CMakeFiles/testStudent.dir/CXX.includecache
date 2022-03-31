@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/het/Desktop/c++ git/day25_het/student/src/Student.cpp
+iostream
+-
+Student.h
+/home/het/Desktop/c++ git/day25_het/student/src/Student.h
+
+/home/het/Desktop/c++ git/day25_het/student/src/mainapp.cpp
+Student.h
+/home/het/Desktop/c++ git/day25_het/student/src/Student.h
+
+include/Student.h
+string
+-
+

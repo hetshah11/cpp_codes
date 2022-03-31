@@ -1,8 +1,11 @@
+//Template specialization
+//Edited by: Het Shah
+
 #include<iostream>
 using namespace std;
 
 template<typename X>
-void swap(X* a , X* b)
+void swap(X* a , X* b)      //template function
     {
         cout << endl << endl;
         cout << "Inside template swap" << endl;
@@ -16,7 +19,7 @@ void swap(X* a , X* b)
         
     }
 
-    void swap(int* a,int* b)
+    void swap(int* a,int* b)        //non template function
         {
             cout << endl << endl;
             cout << "Inside int specialization" << endl;

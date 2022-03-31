@@ -1,3 +1,7 @@
+//map in stl
+//map of objects
+//Edited  by: Het Shah
+
 #include<iostream>
 #include<string.h>
 #include<map>
@@ -43,7 +47,7 @@ class phoneNo
 
 int main()
     {
-        map<name,phoneNo> directory;
+        map<name,phoneNo> directory;    //creating map
 
         directory.insert(pair<name,phoneNo>(name("Emp1"),phoneNo("555-1111")));
         directory.insert(pair<name,phoneNo>(name("Emp2"),phoneNo("555-2222")));

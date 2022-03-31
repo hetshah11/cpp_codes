@@ -1,10 +1,13 @@
+//list in stl
+//Edited by: Het Shah
+
 #include<iostream>
 #include<list>
 using namespace std;
 
 int main()
     {
-        list<int> lst;
+        list<int> lst;      //creating list
         int i;
 
         for(i=0;i<10;i++)

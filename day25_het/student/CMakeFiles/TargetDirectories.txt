@@ -1,0 +1,3 @@
+/home/het/Desktop/c++ git/day25_het/student/CMakeFiles/rebuild_cache.dir
+/home/het/Desktop/c++ git/day25_het/student/CMakeFiles/testStudent.dir
+/home/het/Desktop/c++ git/day25_het/student/CMakeFiles/edit_cache.dir

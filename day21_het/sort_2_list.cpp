@@ -1,3 +1,6 @@
+//sorting list using list container
+//Edited By; Het Shah
+
 #include <iostream>
 #include <list>
 using namespace std;
@@ -69,3 +72,5 @@ int main()
 
     return 0;
 }
+
+//after merging it is also sorting 2 lists

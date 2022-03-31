@@ -1,10 +1,14 @@
+//namespace in C++
+//namespace nesting
+//Edited By; Het Shah
+
 
 #include <iostream>
 using namespace std;
-namespace NS1
+namespace NS1       //outer namespace
 {
     int i;
-    namespace NS2
+    namespace NS2   //inner namespace 
     {
         int j;
     }

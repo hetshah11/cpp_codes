@@ -1,3 +1,6 @@
+//namespace in C++
+//Edited by; Het shah
+
 #include<iostream>
 using namespace std;
 namespace CounterNameSpace

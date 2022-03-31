@@ -1,7 +1,11 @@
+//Non type templates
+//Edited by: Het shah
+
+
 #include<iostream>
 using namespace std;
 
-template<typename T,int N>
+template<typename T,int N>  
 class mySequence
     {
         T memblock[N];
