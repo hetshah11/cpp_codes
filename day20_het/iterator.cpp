@@ -1,3 +1,6 @@
+//Iterator in vector
+//Edited By; Het Shah
+
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -5,7 +8,7 @@ using namespace std;
 int main()
     {
         vector<char> v(10);
-        vector<char>::iterator p;
+        vector<char>::iterator p;   //creating iterator
 
         int i;
         p=v.begin();

@@ -1,3 +1,6 @@
+//template use in static variable
+//Edited By; het shah
+
 #include <iostream>
 using namespace std;
 

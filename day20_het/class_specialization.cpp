@@ -1,8 +1,11 @@
+//class specialization
+//Edited By; Het shah
+
 
 #include <iostream>
 using namespace std;
 template <typename T>
-class Test
+class Test                  //generic class
 {
     T data;
 public:
@@ -18,7 +21,7 @@ public:
         }
 };
 
-template <>
+template <>         //specialized class
 class Test<char>
 {
     char data;

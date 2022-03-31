@@ -1,8 +1,12 @@
+//swapping using template
+//Edited By; Het Shah
+
+
 #include<iostream>
 using namespace std;
 
 template<typename T,typename U>
-void swap(T *a,U *b)
+void swap(T *a,U *b)    //taking 2 generic data types
     {
         //W c=2.5;
         //V temp;

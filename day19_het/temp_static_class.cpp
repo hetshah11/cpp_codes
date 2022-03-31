@@ -1,3 +1,6 @@
+//template use in static variable
+//Edited By; Het Shah
+
 #include<iostream>
 using namespace std;
 
@@ -14,10 +17,10 @@ class display
 
     int main()
         {
-            display<int> ob1;
-            display<int> ob3;
-            display<long> ob2;
-            display<long> ob4;
+            display<int> ob1;       //new copy created of var
+            display<int> ob3;       //old copy is used
+            display<long> ob2;      //new copy created of var
+            display<long> ob4;      //old copy is used
 
             
 

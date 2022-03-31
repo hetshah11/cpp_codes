@@ -1,19 +1,22 @@
+//Overloading of template function
+//Edited By; Het shah
+
 #include<iostream>
 using namespace std;
 
 template<typename T1>
-void sum(T1 a,T1 b,T1 c)
+void sum(T1 a,T1 b,T1 c)        //2 args
     {
         cout << "Sum: " << a+b+c << endl;
     }
 
 template<typename T1,typename T2>
-void sum(T1 a,T2 b,T1 c)
+void sum(T1 a,T2 b,T1 c)        //3 args
     {
         cout << "Sum: " << a+b+c << endl;
     }
 
-void sum(int a,int b)
+void sum(int a,int b)       //non template function
     {
         cout << "Sum: " << a+b << endl;
     }

@@ -1,7 +1,11 @@
+//Template in class
+//Edited by: Het Shah
+
+
 #include<iostream>
 using namespace std;
 
-template <class T>
+template <class T>      //creating class with template
 class Addition
     {
         public:
