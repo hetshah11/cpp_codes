@@ -1,3 +1,6 @@
+//seekp() in file management
+//Edited by: Het Shah
+
 #include<iostream>
 #include<fstream>
 using namespace std;

@@ -1,3 +1,6 @@
+// copying one file into other
+//Edited By; Het Shah
+
 #include<iostream>
 #include<fstream>
 using namespace std;

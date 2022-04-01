@@ -1,3 +1,6 @@
+// Counting words in file
+// Edited By; Het Shah
+
 #include<iostream>
 #include<fstream>
 using namespace std;

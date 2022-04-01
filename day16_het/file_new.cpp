@@ -1,3 +1,6 @@
+// counting number of lines
+// Edited By; Het Shah
+
 #include<iostream>
 #include<fstream>
 using namespace std;

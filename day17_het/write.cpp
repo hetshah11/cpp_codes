@@ -1,3 +1,6 @@
+//writing object in file managemet
+//Edited By; Het Shah
+
 #include <iostream>
 #include<fstream>
 using namespace std;
