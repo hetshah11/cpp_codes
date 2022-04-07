@@ -45,7 +45,7 @@ int main()
 		cout << "ans1=" <<ptr->getDataForBase()<<endl;
 
 		((derived*)ptr)->setDataForBase(5);
-		cout << "ans1=" <<(derived*)ptr)->getDataForBase()<<endl;
+		cout << "ans1=" <<((derived*)ptr)->getDataForBase()<<endl;
 		
 		
 		//ptr->setDataForDerived(10);				//Error		

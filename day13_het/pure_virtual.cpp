@@ -14,9 +14,9 @@ class shape		//class shape
 				{
 					cin >> x;
 				}
-			virtual float calculateArea()		//pure virtual function(function without any body)
-				{
-				} 
+			// virtual float calculateArea()		//pure virtual function(function without any body)
+			// 	{
+			// 	} 
 		private:		//private method 
 			void fun()
 				{
